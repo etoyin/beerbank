@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Raleway');
+*{
+  font-family: 'Raleway', sans-serif;
+}
 
 main{
   /*background-color: #c0d1c2;*/
@@ -33,11 +37,14 @@ main{
 header{
   background-color: #23ef38;
   width: 100vw;
+  color: white;
 }
-.head{
-  width: ;
-  padding: 35px 5px 10px 5px;
+input[type=text]{
+  color: #333;
+}
 
+.head{
+  padding: 35px 5px 10px 5px;
 }
 
 .navb {
@@ -53,7 +60,7 @@ header{
   font-size: 18px;
   float: right;
   display: block;
-  color: #2f2f2f;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -61,31 +68,18 @@ header{
 .navb a:hover {
   background: #01ef26;
   text-decoration: none;
-  color: #2f2f2f;
+  color: white;
 }
-h4 > a{
+h4  a{
   text-decoration: none;
-  color: #2f2f2f;
+  color: white;
 }
-h4 > a:hover{
+h4  a:hover{
   background: #01ef26;
   text-decoration: none;
-  color: #2f2f2f;
-}
-/*
-a:link, a:visited{
-  background-color: #23ef38;
   color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
 }
-a:hover, a:active {
-  background-color: #23ff38;
-  text-decoration: none;
-  color: white;
-}*/
+
 #beer-img {
   height: 130px;
   width: 45px;
@@ -94,13 +88,16 @@ a:hover, a:active {
 }
 .star {
   font-size: 20px;
-	color: #23ef38;
+	color: #f4f142;
 }
-input[type="checkbox"] {
-	display: block;
+input[type=checkbox] {
+	display: none;
 }
 div.nopad{
   position: relative;
+}
+.nopad:hover{
+  box-shadow: ;
 }
 .star.glyphicon{
   position: absolute;
@@ -151,7 +148,7 @@ div.nopad{
   padding: 20px;
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 .about_pop{
   padding-right: 20px;
 }
@@ -174,5 +171,28 @@ label {
   padding: 5px 5px 5px 5px;
   display: inline-block;
 }
-button{
+@media screen and (max-width: 500px) {
+  .form_advance{
+    width: 100%;
+  }
+}
+
+.waitLoader{
+	display:none;
+	width:100%;
+	height:100%;
+	//border:1px solid black;
+	position:fixed;
+	background-color: rgba(0,0,0,0.5);
+	top:0;
+	left:0;
+	z-index: 3;
+	//padding:2px;
+}
+.waitLoaderImg{
+	position: relative;
+	top: 45%;
+	left: 45%;
+	height: 3em;
+	width: 3em;
 }
